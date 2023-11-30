@@ -7,7 +7,6 @@ import org.hibernate.cfg.Configuration;
 
 import org.hibernate.query.Query;
 import poo.models.Departamento;
-import poo.models.Empresa;
 import poo.models.Funcionario;
 import poo.models.Projeto;
 
@@ -44,8 +43,7 @@ public class FuncionarioDAO {
         }
     }
 
-    public List<Funcionario> getAll()
-    {
+    public List<Funcionario> getAll() {
         try (Session session = sessionFactory.openSession()) {
             String hql = "FROM Funcionario";
             Query<Funcionario> query = session.createQuery(hql, Funcionario.class);

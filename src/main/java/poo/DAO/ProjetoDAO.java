@@ -7,8 +7,6 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 import poo.models.Departamento;
 import poo.models.Projeto;
-import poo.models.Empresa;
-
 import java.util.Collections;
 import java.util.List;
 

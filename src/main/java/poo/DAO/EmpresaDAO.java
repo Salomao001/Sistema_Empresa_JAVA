@@ -11,7 +11,6 @@ import java.util.List;
 import org.hibernate.query.Query;
 import poo.models.Empresa;
 
-
 public class EmpresaDAO {
     private static final SessionFactory sessionFactory;
 
@@ -41,6 +40,7 @@ public class EmpresaDAO {
             e.printStackTrace();
         }
     }
+
     public List<Empresa> getAll() {
         try (Session session = sessionFactory.openSession()) {
             String hql = "SELECT DISTINCT empresa FROM Empresa empresa LEFT JOIN FETCH empresa.departamentos";

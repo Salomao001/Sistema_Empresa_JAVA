@@ -44,7 +44,7 @@ public class DepartamentoDAO {
 
     public Empresa getEmpresa(int id) {
         try (Session session = sessionFactory.openSession()) {
-           return session.get(Empresa.class, id);
+            return session.get(Empresa.class, id);
         }
     }
 
@@ -67,17 +67,20 @@ public class DepartamentoDAO {
         }
     }
 
-
-    /*public List<Departamento> getAllProjects() {
-        try (Session session = sessionFactory.openSession()) {
-            String hql = "SELECT DISTINCT departamento FROM Departamento departamento LEFT JOIN FETCH departamento.projetos";
-            Query<Departamento> query = session.createQuery(hql, Departamento.class);
-            return query.list();
-        } catch (Exception e) {
-            e.printStackTrace();
-            return Collections.emptyList();
-        }
-    }*/
+    /*
+     * public List<Departamento> getAllProjects() {
+     * try (Session session = sessionFactory.openSession()) {
+     * String hql =
+     * "SELECT DISTINCT departamento FROM Departamento departamento LEFT JOIN FETCH departamento.projetos"
+     * ;
+     * Query<Departamento> query = session.createQuery(hql, Departamento.class);
+     * return query.list();
+     * } catch (Exception e) {
+     * e.printStackTrace();
+     * return Collections.emptyList();
+     * }
+     * }
+     */
 
     public Departamento getDepartamentoById(int id) {
         try (Session session = sessionFactory.openSession()) {

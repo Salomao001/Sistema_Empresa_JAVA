@@ -2,7 +2,6 @@ package poo.models;
 
 import javax.persistence.*;
 import javax.persistence.Id;
-import java.util.List;
 
 @Entity
 public class Funcionario {
@@ -22,10 +21,10 @@ public class Funcionario {
     @JoinColumn(name = "projeto_id")
     private Projeto projeto;
 
-    public Funcionario(){}
+    public Funcionario() {
+    }
 
-    public Funcionario(String _nome, String _cargo, double _salario, Departamento _departamento, Projeto _projeto)
-    {
+    public Funcionario(String _nome, String _cargo, double _salario, Departamento _departamento, Projeto _projeto) {
         this.nome = _nome;
         this.cargo = _cargo;
         this.salario = _salario;
@@ -33,38 +32,31 @@ public class Funcionario {
         this.projeto = _projeto;
     }
 
-    public int getId()
-    {
+    public int getId() {
         return id;
     }
 
-    public String getNome()
-    {
+    public String getNome() {
         return nome;
     }
 
-    public void setNome(String _nome)
-    {
+    public void setNome(String _nome) {
         this.nome = _nome;
     }
 
-    public String getCargo()
-    {
+    public String getCargo() {
         return cargo;
     }
 
-    public void setCargo(String _cargo)
-    {
+    public void setCargo(String _cargo) {
         this.cargo = _cargo;
     }
 
-    public double getSalario()
-    {
+    public double getSalario() {
         return salario;
     }
 
-    public void setSalario(double _salario)
-    {
+    public void setSalario(double _salario) {
         this.salario = _salario;
     }
 
@@ -75,4 +67,17 @@ public class Funcionario {
     public void setProjeto(Projeto _projeto) {
         this.projeto = _projeto;
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Departamento getDepartamento() {
+        return this.departamento;
+    }
+
+    public Projeto getProjeto() {
+        return this.projeto;
+    }
+
 }
