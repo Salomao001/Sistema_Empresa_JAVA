@@ -34,19 +34,19 @@ public class Projeto {
     }
 
     public String getNome() {
-        return this.nome;
+        return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNome(String _nome) {
+        this.nome = _nome;
     }
 
     public String getDescricao() {
-        return this.descricao;
+        return descricao;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public void setDescricao(String _descricao) {
+        this.descricao = _descricao;
     }
 
     public List<Funcionario> getFuncionarios() {

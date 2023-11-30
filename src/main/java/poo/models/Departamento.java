@@ -32,6 +32,9 @@ public class Departamento {
         this.empresa = _empresa;
     }
 
+    public int getId() {
+        return id;
+    }
     public String getNome() {
         return nome;
     }
@@ -40,18 +43,11 @@ public class Departamento {
         this.nome = _nome;
     }
 
+
     public List<Funcionario> getFuncionarios() {
         return funcionarios;
     }
-
-    public int getId() {
-        return id;
-    }
-
     public List<Projeto> getProjetos() {
         return projetos;
-    }
-    public void setProjetos(List<Projeto> projetos) {
-        this.projetos = projetos;
     }
 }

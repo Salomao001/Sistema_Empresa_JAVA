@@ -35,12 +35,12 @@ public class Funcionario {
 
     public int getId()
     {
-        return this.id;
+        return id;
     }
 
     public String getNome()
     {
-        return this.nome;
+        return nome;
     }
 
     public void setNome(String _nome)
@@ -50,7 +50,7 @@ public class Funcionario {
 
     public String getCargo()
     {
-        return this.cargo;
+        return cargo;
     }
 
     public void setCargo(String _cargo)
@@ -60,7 +60,7 @@ public class Funcionario {
 
     public double getSalario()
     {
-        return this.salario;
+        return salario;
     }
 
     public void setSalario(double _salario)
@@ -68,11 +68,11 @@ public class Funcionario {
         this.salario = _salario;
     }
 
-    public void setDepartamento(Departamento departamento) {
-        this.departamento = departamento;
+    public void setDepartamento(Departamento _departamento) {
+        this.departamento = _departamento;
     }
 
-    public void setProjeto(Projeto projeto) {
-        this.projeto = projeto;
+    public void setProjeto(Projeto _projeto) {
+        this.projeto = _projeto;
     }
 }

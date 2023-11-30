@@ -26,7 +26,7 @@ public class Empresa {
 
     public String getNome()
     {
-        return this.nome;
+        return nome;
     }
 
     public void setNome(String _nome)
