@@ -1,9 +1,7 @@
 package poo.models;
 
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.List;
-
 
 @Entity
 public class Departamento {
@@ -27,7 +25,7 @@ public class Departamento {
     public Departamento() {
     }
 
-    public Departamento(String _nome, Empresa _empresa){
+    public Departamento(String _nome, Empresa _empresa) {
         this.nome = _nome;
         this.empresa = _empresa;
     }
@@ -35,6 +33,7 @@ public class Departamento {
     public int getId() {
         return id;
     }
+
     public String getNome() {
         return nome;
     }
@@ -43,11 +42,27 @@ public class Departamento {
         this.nome = _nome;
     }
 
-
     public List<Funcionario> getFuncionarios() {
         return funcionarios;
     }
+
     public List<Projeto> getProjetos() {
         return projetos;
+    }
+
+    public void setFuncionarios(List<Funcionario> funcionarios) {
+        this.funcionarios = funcionarios;
+    }
+
+    public void setProjetos(List<Projeto> projetos) {
+        this.projetos = projetos;
+    }
+
+    public Empresa getEmpresa() {
+        return this.empresa;
+    }
+
+    public void setEmpresa(Empresa empresa) {
+        this.empresa = empresa;
     }
 }
