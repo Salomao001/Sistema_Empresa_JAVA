@@ -7,7 +7,7 @@
         <!-- Configurações do Banco de Dados -->
         <property name="hibernate.dialect">org.sqlite.hibernate.dialect.SQLiteDialect</property>
         <property name="hibernate.connection.driver_class">org.sqlite.JDBC</property>
-        <property name="hibernate.connection.url">jdbc:sqlite:C:\Users\cecil\OneDrive\Documentos\Católica\Codigos\POO\Sistema_Empresa_JAVA\DB\database.sqlite</property>
+        <property name="hibernate.connection.url">jdbc:sqlite:C:\Users\Usuário\OneDrive\Documentos\sistema_empresa\database.sqlite</property>
 
         <!-- Configurações do Pool de Conexões -->
         <property name="hibernate.c3p0.min_size">5</property>
