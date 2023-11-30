@@ -1,6 +1,8 @@
 package poo.models;
 
 import javax.persistence.*;
+
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -18,23 +20,28 @@ public class Empresa {
     @OneToMany(mappedBy = "empresa", cascade = CascadeType.ALL)
     private List<Departamento> departamentos;
 
-    public Empresa(){}
+    public Empresa() {
+        departamentos = new ArrayList<>();
+    }
 
-    public Empresa(String _nome){
+    public Empresa(String _nome) {
         this.nome = _nome;
     }
 
-    public String getNome()
-    {
+    public String getNome() {
         return nome;
     }
 
-    public void setNome(String _nome)
-    {
+    public void setNome(String _nome) {
         this.nome = _nome;
     }
 
     public List<Departamento> getDepartamentos() {
         return departamentos;
     }
+
+    public void setDepartamentos(List<Departamento> departamentos) {
+        this.departamentos = departamentos;
+    }
+
 }

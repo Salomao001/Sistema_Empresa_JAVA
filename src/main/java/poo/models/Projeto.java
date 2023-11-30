@@ -21,9 +21,10 @@ public class Projeto {
     @JoinColumn(name = "departamento_id")
     private Departamento departamento;
 
-    public Projeto(){}
+    public Projeto() {
+    }
 
-    public Projeto(String _nome, String _descricao, Departamento _departamento){
+    public Projeto(String _nome, String _descricao, Departamento _departamento) {
         this.nome = _nome;
         this.descricao = _descricao;
         this.departamento = _departamento;
@@ -52,4 +53,17 @@ public class Projeto {
     public List<Funcionario> getFuncionarios() {
         return funcionarios;
     }
+
+    public void setFuncionarios(List<Funcionario> funcionarios) {
+        this.funcionarios = funcionarios;
+    }
+
+    public Departamento getDepartamento() {
+        return this.departamento;
+    }
+
+    public void setDepartamento(Departamento departamento) {
+        this.departamento = departamento;
+    }
+
 }
