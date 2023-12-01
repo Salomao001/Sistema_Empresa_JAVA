@@ -15,8 +15,6 @@ public class repositoryEmpresa {
        EmpresaDAO context = new EmpresaDAO();
        App.clearConsole();
 
-
-
        List<Empresa> empresas = context.getAll();
 
        System.out.println("Empresas");
@@ -25,7 +23,7 @@ public class repositoryEmpresa {
             System.out.println("ID: " + empresa.getId());
             System.out.println("Nome: " + empresa.getNome());
 
-            if (empresa.getDepartamentos() != null) {
+            if (!empresa.getDepartamentos().isEmpty()) {
                 System.out.println("Departamentos");
                 for (Departamento departamento : empresa.getDepartamentos()) {
                     System.out.println("  - Departamento: " + departamento.getNome());

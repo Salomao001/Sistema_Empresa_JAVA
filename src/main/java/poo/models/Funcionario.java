@@ -68,10 +68,6 @@ public class Funcionario {
         this.projeto = _projeto;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public Departamento getDepartamento() {
         return this.departamento;
     }
